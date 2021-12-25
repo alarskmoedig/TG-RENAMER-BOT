@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - Line: %(lineno)d - Path: %(name)s - Module: %(module)s.py - %(levelname)s - %(message)s',
                     datefmt='%d/%m/%Y %I:%M:%S %p')
 logging.getLogger().setLevel(logging.DEBUG)
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.INFO) 
 logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger().setLevel(logging.WARNING)
 
@@ -30,7 +30,7 @@ def main():
     startup_msg = f"Successfully deployed your Renamer at @{me.username}\n"
     startup_msg += f"Pyrogram Version: V{__version__}\n"
     startup_msg += f"Python Version: V{platform.python_version()}\n\n"
-    startup_msg += "Thanks for deploying our bot. Please give a star to my repo and join @Ns_bot_updates."
+    startup_msg += "Thanks for deploying our bot. Please give a star to my repo and join @alars_chat."
     print(startup_msg)
 
     idle()
